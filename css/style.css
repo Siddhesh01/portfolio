@@ -96,6 +96,12 @@ body{
 /* adding animation to home section image  */
 .home img{
     animation: floatimg 4s ease-in-out infinite;
+    max-width: 100%; /* Ensure the image scales proportionally within its container */
+    height: auto; /* Maintain the aspect ratio */
+    position: relative; /* Allow positioning adjustments */
+    top: -150px; /* Move the image upwards */
+    margin: 0 auto; /* Center the image horizontally if necessary */
+    display: block; /* Ensure it behaves as a block element to center correctly */
 }
 
 @keyframes floatimg {
@@ -176,16 +182,16 @@ body{
     font-size: 1.5rem;
     font-weight: 600;
 }
-.html-progress{
+.python-progress{
     color: #fca61f;
 }
-.javascript-progress{
+.SQL-progress{
     color: #6f34fe;
 }
-.php-progress{
+.datavisualization-progress{
     color: #20c997;
 }
-.reactjs-progress{
+.msexcel-progress{
     color: #3f396d;
 }
 .text{
